@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A643CD9-6872-4BBD-9AED-EB6AD67F34A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jarm_Game</RootNamespace>
+    <AssemblyName>Jarm_Game</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>65957018B43D74D69F636520B3CC3332C1ADE0EF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Jarm_Game_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class Of All\clsAddition.cs" />
+    <Compile Include="Class Of All\clsSubstraction.cs" />
+    <Compile Include="Play with Account\CarDodgeAccount\frmCarDodgeAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\CarDodgeAccount\frmCarDodgeAcc.Designer.cs">
+      <DependentUpon>frmCarDodgeAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmAddition.Designer.cs">
+      <DependentUpon>frmAddition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmAddition1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmAddition1.Designer.cs">
+      <DependentUpon>frmAddition1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\CarDodgeAccount\frmcarplayernameAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\CarDodgeAccount\frmcarplayernameAcc.Designer.cs">
+      <DependentUpon>frmcarplayernameAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen\frmArithmeticSolvingloading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\frmArithmeticSolvingloading2.Designer.cs">
+      <DependentUpon>frmArithmeticSolvingloading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmcarplayernameGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmcarplayernameGuest.Designer.cs">
+      <DependentUpon>frmcarplayernameGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class Of All\clsAccount.cs" />
+    <Compile Include="Class Of All\clsCardodge.cs" />
+    <Compile Include="Class Of All\clsLogin.cs" />
+    <Compile Include="Class Of All\clsMultiplication.cs" />
+    <Compile Include="Class Of All\clsRegister.cs" />
+    <Compile Include="Class Of All\clsTwoPlayers.cs" />
+    <Compile Include="Splash Screen\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen\frmArithmeticSolvingloading1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\frmArithmeticSolvingloading1.Designer.cs">
+      <DependentUpon>frmArithmeticSolvingloading1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmCarDodgeGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmCarDodgeGuest.Designer.cs">
+      <DependentUpon>frmCarDodgeGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen\frmcardodgeloading1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\frmcardodgeloading1.Designer.cs">
+      <DependentUpon>frmcardodgeloading1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen\frmcardodgeloading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen\frmcardodgeloading2.Designer.cs">
+      <DependentUpon>frmcardodgeloading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmMultiplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmMultiplication.Designer.cs">
+      <DependentUpon>frmMultiplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmMultiplication1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmMultiplication1.Designer.cs">
+      <DependentUpon>frmMultiplication1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmPlayerNameAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmPlayerNameAccount.Designer.cs">
+      <DependentUpon>frmPlayerNameAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmPlayerNameGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmPlayerNameGuest.Designer.cs">
+      <DependentUpon>frmPlayerNameGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmPlayUsGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\CarDodgeGuest\frmPlayUsGuest.Designer.cs">
+      <DependentUpon>frmPlayUsGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmSubstraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play with Account\ArithmeticSolvingAccount\frmSubstraction.Designer.cs">
+      <DependentUpon>frmSubstraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmSubstraction1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Us Guest\ArithmeticSolvingGuest\frmSubstraction1.Designer.cs">
+      <DependentUpon>frmSubstraction1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Register and Login\frmUserRegisterAndLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Register and Login\frmUserRegisterAndLogin.Designer.cs">
+      <DependentUpon>frmUserRegisterAndLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Play with Account\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\ArithmeticSolvingAccount\frmAddition.resx">
+      <DependentUpon>frmAddition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\ArithmeticSolvingGuest\frmAddition1.resx">
+      <DependentUpon>frmAddition1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\CarDodgeAccount\frmCarDodgeAcc.resx">
+      <DependentUpon>frmCarDodgeAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\CarDodgeAccount\frmcarplayernameAcc.resx">
+      <DependentUpon>frmcarplayernameAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\frmArithmeticSolvingloading2.resx">
+      <DependentUpon>frmArithmeticSolvingloading2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\CarDodgeGuest\frmcarplayernameGuest.resx">
+      <DependentUpon>frmcarplayernameGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\frmArithmeticSolvingloading1.resx">
+      <DependentUpon>frmArithmeticSolvingloading1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\CarDodgeGuest\frmCarDodgeGuest.resx">
+      <DependentUpon>frmCarDodgeGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\frmcardodgeloading1.resx">
+      <DependentUpon>frmcardodgeloading1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen\frmcardodgeloading2.resx">
+      <DependentUpon>frmcardodgeloading2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\ArithmeticSolvingAccount\frmMultiplication.resx">
+      <DependentUpon>frmMultiplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\ArithmeticSolvingGuest\frmMultiplication1.resx">
+      <DependentUpon>frmMultiplication1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\ArithmeticSolvingAccount\frmPlayerNameAccount.resx">
+      <DependentUpon>frmPlayerNameAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\ArithmeticSolvingGuest\frmPlayerNameGuest.resx">
+      <DependentUpon>frmPlayerNameGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\CarDodgeGuest\frmPlayUsGuest.resx">
+      <DependentUpon>frmPlayUsGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play with Account\ArithmeticSolvingAccount\frmSubstraction.resx">
+      <DependentUpon>frmSubstraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Us Guest\ArithmeticSolvingGuest\frmSubstraction1.resx">
+      <DependentUpon>frmSubstraction1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Register and Login\frmUserRegisterAndLogin.resx">
+      <DependentUpon>frmUserRegisterAndLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Jarm_Game_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArithmeticSolving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_23-04-24_10-49-27-021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Text - Guest mode 434440262356117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Text - Play as Guest 434439612325346.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car Dodge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardodgebak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quesbakdes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerbakdess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamemenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepagebakdes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamemenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginAccount1.0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
